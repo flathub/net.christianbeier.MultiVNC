@@ -40,4 +40,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/bk138/multivnc.git
-        commit: 08651e49a3e2c4ebeb23d21f370dbf45f238cab8
+        tag: MultiVNC-0.7.0
