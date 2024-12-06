@@ -34,11 +34,13 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
-        sha1: 4ffee63f4109cafe98b82b44adec6ed9a4e4ad1e
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.6/wxWidgets-3.2.6.tar.bz2
+        sha1: 44371dfdcc96a0e3d5e03d2d726470f645035619
   - name: multivnc
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: git
         url: https://github.com/bk138/multivnc.git
-        commit: a5d92aab1af6c1a95aa7efcc20a4b78ebbd83de5
+        commit: MultiVNC-0.8.0
